@@ -3,7 +3,6 @@ import styled from 'styled-components';
 export const ContainerSite = styled.div`
   display: flex;
   justify-content: space-between;
-  background: #f8f8f9;
 
 `
 
