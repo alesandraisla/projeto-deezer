@@ -36,3 +36,7 @@ export const ContentAside = styled.div`
   gap: 16px;
   align-items: center;
 `
+
+export const LinkAlert = styled.a`
+  cursor: pointer;
+`
