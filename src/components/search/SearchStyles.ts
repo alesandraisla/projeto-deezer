@@ -53,11 +53,29 @@ export const TitleModalPerfil = styled.h2`
 border-bottom: 1px solid #eaeaea;
 padding-bottom: 10px;
 padding-left: 10px;
-display: flex;
 align-items: center;
 gap: 10px;
 font-weight: 100;
 font-size: 11px;
+display: flex;
+justify-content: space-between;
+  div {
+    display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      gap: 10px;
+  }
+  span {
+    padding-right: 20px;
+    display: inline-block;
+    transition: transform 0.3s ease; 
+    :hover {
+      transform: translateX(5px); 
+    }
+  }
+  :hover {
+      background-color: #eaeaea;
+    }
 
 `
 

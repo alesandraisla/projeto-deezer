@@ -26,6 +26,8 @@ export const ModalContainer = styled.div`
   border-radius: 3px;
   padding-left: 0px;
     padding-right: 0px;
+    -webkit-box-shadow: 1px 4px 10px -1px #757575; 
+box-shadow: 1px 4px 10px -1px #757575;
 `;
 
 

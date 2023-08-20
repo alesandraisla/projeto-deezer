@@ -1,10 +1,11 @@
 import { ContentAside, ImagePerfil, LinkAlert, SearchBarWrapper, SearchInput, TitleModal, TitleModalPerfil } from "./SearchStyles";
 import React, { useState } from 'react';
-import { Bell, MagnifyingGlass} from "phosphor-react";
+import { Bell, MagnifyingGlass, CaretRight} from "phosphor-react";
 import avatarIsla from '../../images/avatarIsla.jpeg';
 import Modal from "../Modal/Modal";
 import { Notification } from "../Notification/Notification";
 import { InformationPerfil } from "../InformationPerfil/InformationPerfil";
+import { SubInformationPerfil } from "../SubInformationPerfil/SubInformationPerfil";
 
 export function Search() {
   const [modalIsOpen, setModalIsOpen] = useState(false);
@@ -57,10 +58,17 @@ export function Search() {
 
         <Modal isOpen={modalIsOpenPerfil} onClose={closeModalPerfil}>
           <TitleModalPerfil>
-            <ImagePerfil src={avatarIsla}/>
-            Isla Mempis
+            <div>
+              <ImagePerfil src={avatarIsla}/>
+              Isla Mempis
+            </div>
+            <span>
+            <CaretRight size={15}  />
+
+            </span>
           </TitleModalPerfil>
           <InformationPerfil />
+          <SubInformationPerfil/>
         </Modal>
 
       </ContentAside>
