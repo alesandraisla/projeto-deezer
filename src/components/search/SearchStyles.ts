@@ -40,3 +40,24 @@ export const ContentAside = styled.div`
 export const LinkAlert = styled.a`
   cursor: pointer;
 `
+
+export const TitleModal = styled.h2`
+border-bottom: 1px solid #eaeaea;
+font-size: 14px;
+padding-bottom: 10px;
+padding-left: 10px;
+
+`
+
+export const TitleModalPerfil = styled.h2`
+border-bottom: 1px solid #eaeaea;
+padding-bottom: 10px;
+padding-left: 10px;
+display: flex;
+align-items: center;
+gap: 10px;
+font-weight: 100;
+font-size: 11px;
+
+`
+

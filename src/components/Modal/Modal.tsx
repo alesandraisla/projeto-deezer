@@ -1,5 +1,5 @@
 import React from 'react';
-import { ModalContainer, ModalOverlay, TitleModal } from "./ModalStyles";
+import { ModalContainer, ModalOverlay} from "./ModalStyles";
 
 interface ModalProps {
   isOpen: boolean;
@@ -12,9 +12,6 @@ const Modal = ({ isOpen, onClose, children }: ModalProps) => {
     <ModalOverlay className={isOpen ? 'open' : ''} onClick={onClose}>
       <ModalContainer>
         {/* <button onClick={onClose}>Fechar</button> */}
-        <TitleModal>
-          Notificações
-        </TitleModal>
         {children}
       </ModalContainer>
     </ModalOverlay>

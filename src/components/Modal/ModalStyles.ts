@@ -16,7 +16,7 @@ export const ModalOverlay = styled.div`
 export const ModalContainer = styled.div`
   background-color: white;
   width: 60%;
-  max-width: 400px;
+  max-width: 250px;
   padding: 20px;
   position: fixed;
   top: 51px; 
@@ -28,11 +28,4 @@ export const ModalContainer = styled.div`
     padding-right: 0px;
 `;
 
-export const TitleModal = styled.h2`
-border-bottom: 1px solid #eaeaea;
-font-size: 14px;
-padding-bottom: 10px;
-padding-left: 10px;
 
-
-`

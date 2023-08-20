@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export const ContainerSite = styled.div`
   display: flex;
   justify-content: space-between;
-
+  font-family: "Open Sans", Helvetica, Arial, sans-serif;
 `
 
 export const Content = styled.div`
