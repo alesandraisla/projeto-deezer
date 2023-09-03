@@ -5,9 +5,9 @@ export const SearchBarWrapper = styled.div`
   display: flex;
   align-items: center;
   background-color: #ffffff;
-  padding: 8px;
   height: 100%;
   width: 100%;
+  border-bottom: 1px solid #eaeaea;
 `;
 
 export const SearchInput = styled.input`
@@ -78,4 +78,7 @@ justify-content: space-between;
     }
 
 `
-
+export const LogoDeezer = styled.img `
+  display: flex;
+  width: 200px;
+`

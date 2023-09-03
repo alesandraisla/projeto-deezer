@@ -1,9 +1,8 @@
-import { ContainerAside, ContainerOfNavigation, ContentOfLists, ItemOfList, ItemOfSubList, LogoDeezer } from "./AsideStyles";
-import logoDeezer from '../../images/logoDeezer.png';
+import { ContainerAside, ContainerOfNavigation, ContentOfLists, ItemOfList, ItemOfSubList } from "./AsideStyles";
 import React from 'react';
 import { Headphones, Radio, Ticket, Binoculars, Heart } from "phosphor-react";
 import { MicrophoneStage } from "phosphor-react";
-
+import { Link } from 'react-router-dom';
 
 export function Aside() {
 
@@ -17,7 +16,7 @@ export function Aside() {
   ]
 
   const namesSubNavigation = [
-    {id: 1, name: 'Mais queridas', url: '/#'},
+    {id: 1, name: 'Mais queridas', url: '/moreMusic'},
     {id: 2, name: 'Playlist', url: '/#'},
     {id: 3, name: 'Álbuns', url: '/#'},
     {id: 4, name: 'Artistas', url: '/#'},
@@ -27,25 +26,25 @@ export function Aside() {
   return(
     <>
       <ContainerAside>
-        <LogoDeezer src={logoDeezer} />
+        
         <ContainerOfNavigation>
         <ContentOfLists>
           {namesNavigation.map((item, index) => (
             <ItemOfList key={item.id} >
-              <a href={item.url}>
+              <Link to={item.url}>
                 {item.icon}
                 {item.name}
 
-              </a>
+              </Link>
             </ItemOfList>
           ))}
         </ContentOfLists>
         <ContentOfLists>
           {namesSubNavigation.map((item, index) => (
             <ItemOfSubList key={item.id}> 
-            <a href={item.url}>
+            <Link to={item.url}>
               {item.name} 
-            </a>
+            </Link>
             </ItemOfSubList>
           ))}
         </ContentOfLists>

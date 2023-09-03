@@ -4,13 +4,11 @@ export const ContainerAside = styled.div `
   display: flex;
   flex-direction: column;
   background: #f8f8f9;
-
-`
-
-export const LogoDeezer = styled.img `
-  display: flex;
   width: 200px;
+
 `
+
+
 
 export const ItemOfList = styled.li`
   list-style-type: none;  padding: 10px 0px;
