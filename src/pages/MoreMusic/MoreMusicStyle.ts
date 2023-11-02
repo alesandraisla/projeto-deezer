@@ -80,4 +80,9 @@ list-style-type: none;
     border-color: var(--tempo-colors-text-secondary);
     text-decoration: none;
   }
+
+  a:active {
+    border-color: var(--tempo-colors-accent-main);
+    color: var(--tempo-colors-text-main);
+  }
 `
