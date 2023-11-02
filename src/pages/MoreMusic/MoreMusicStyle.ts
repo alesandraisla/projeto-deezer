@@ -1,10 +1,12 @@
 import styled from 'styled-components';
 
-export const ContainerMoreMusic = styled.div ``
+export const ContainerMoreMusic = styled.div `
+padding-left:20px ;
+`
 
 export const ContentTop = styled.div `
-display: flex;
-padding: 20px;
+/* display: flex;
+padding: 20px; */
 `
 
 export const ContentBottom = styled.div ``
@@ -53,6 +55,29 @@ display: inline-flex;
     font-size: 12px;
 `
 
-export const NavigationPerfil = styled.div``
+export const NavigationPerfil = styled.div`
+  display: flex;
+  padding-top: 10px;
+  gap: 24px;
 
-export const ItemNav = styled.li``
+`
+
+export const ItemNav = styled.li`
+list-style-type: none;
+  a{
+    text-decoration: none;
+      color: #52525d;
+      background-color: rgba(0,0,0,0);
+      border-bottom: 2px solid rgba(0,0,0,0);
+      box-sizing: border-box;
+      display: block;
+      font-weight: 400;
+      padding-bottom: 16px;
+      transition-duration: .15s;
+      transition-property: border-color,color;
+  }
+  a:hover {
+    border-color: var(--tempo-colors-text-secondary);
+    text-decoration: none;
+  }
+`
